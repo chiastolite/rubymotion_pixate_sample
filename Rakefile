@@ -17,4 +17,7 @@ Motion::Project::App.setup do |app|
   app.pods do
     pod 'Pixate'
   end
+  app.pixate.user = ENV['PIXATE_USER']
+  app.pixate.key  = ENV['PIXATE_KEY']
+  app.pixate.framework = 'vendor/Pods/Pixate/Framework/iOS/Pixate.framework/'
 end
